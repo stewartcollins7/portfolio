@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{background: "purple", height: window.screen.availHeight}}>
+     <Grid container style={{height: "100%"}}>
+       <Grid item xs={6} style={{alignItems: "center", display: "inherit"}}>
+         <Paper style={{margin: "auto", padding: 20}}>This page is under construction</Paper>
+       </Grid>
+       <Grid item xs={6} style={{margin: "auto"}}>
+         <img alt="Truck" style={{height: "40%"}} src="https://opensource.com/sites/default/files/styles/image-full-size/public/lead-images/dumptruck_car_vehicle_storage_container_road.jpg?itok=TWK0CbX_"/>
+       </Grid>
+     </Grid>
     </div>
   );
-}
+};
 
 export default App;
